@@ -83,8 +83,19 @@ The following example uses the Monalisa pair and the provided blended result.
 
 ### Task 2: Pix2Pix
 
-The Pix2Pix training artifacts are not stored in this upload.
-Run `Pix2Pix/train.py` locally to generate checkpoints and comparison images.
+The following samples show the training and validation comparison at `epoch_0` and `epoch_300`.
+
+#### Train Results
+
+| Epoch 0 | Epoch 300 |
+|---|---|
+| ![train epoch 0](Pix2Pix/train_results/epoch_0/result_1.png) | ![train epoch 300](Pix2Pix/train_results/epoch_300/result_1.png) |
+
+#### Validation Results
+
+| Epoch 0 | Epoch 300 |
+|---|---|
+| ![val epoch 0](Pix2Pix/val_results/epoch_0/result_1.png) | ![val epoch 300](Pix2Pix/val_results/epoch_300/result_1.png) |
 
 ## Contributing
 
