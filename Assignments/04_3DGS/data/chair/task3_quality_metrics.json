@@ -1,0 +1,96 @@
+{
+  "settings": {
+    "dataset": "data/chair",
+    "resolution": "100x100",
+    "simplified_checkpoint": "checkpoint_000060.pt",
+    "official_iterations": 30000,
+    "official_background": "white_background"
+  },
+  "quality": {
+    "simplified_black_gt_full": {
+      "L1": 0.02509077697061002,
+      "PSNR": 21.529813508649465,
+      "SSIM": 0.8904640418291092
+    },
+    "simplified_black_gt_foreground": {
+      "L1": 0.10164202146232128,
+      "PSNR": 15.697588299428679
+    },
+    "official_saved_gt_full": {
+      "L1": 0.7830757308006286,
+      "PSNR": 1.1030151505928232,
+      "SSIM": 0.13412704082205892
+    },
+    "official_white_composited_gt_full": {
+      "L1": 0.06826811763457954,
+      "PSNR": 16.9789736525061,
+      "SSIM": 0.6577930241823197
+    },
+    "official_black_gt_foreground": {
+      "L1": 0.23256390772759913,
+      "PSNR": 11.35428012209864
+    }
+  },
+  "speed_memory": {
+    "simplified_benchmark_100_steps": {
+      "steps": 100,
+      "elapsed_seconds": 128.14544269999897,
+      "seconds_per_step": 1.2814544269999897,
+      "steps_per_second": 0.7803632957444284,
+      "mean_loss": 0.07945484086871148,
+      "first_loss": 0.09189306944608688,
+      "last_loss": 0.058602385222911835,
+      "cuda_peak_allocated_mib": 7961.0517578125,
+      "cuda_peak_reserved_mib": 10464.0
+    },
+    "simplified_estimated_6100_steps_seconds": 7816.872004699937,
+    "official_train_30000": {
+      "elapsed_seconds": 174.824,
+      "steps_per_second": 171.60115315974923,
+      "vram_nvidia_smi_peak_mib": 358,
+      "vram_nvidia_smi_idle_mib": 13
+    },
+    "official_render_100_views": {
+      "elapsed_seconds": 4.205
+    }
+  },
+  "point_counts": {
+    "initial_colmap_points": 13641,
+    "simplified_gaussians": 13641,
+    "official_final_gaussians": 28089
+  },
+  "official_r1_full_resolution": {
+    "settings": {
+      "resolution": "800x800",
+      "iterations": 30000,
+      "background": "white_background"
+    },
+    "quality": {
+      "official_saved_gt_full": {
+        "L1": 0.7929673504829406,
+        "PSNR": 1.0381761279182937,
+        "SSIM": 0.18943107202649118
+      },
+      "official_white_composited_gt_full": {
+        "L1": 0.07266312104417011,
+        "PSNR": 16.971172363854127,
+        "SSIM": 0.7929859417676925
+      },
+      "official_black_gt_foreground": {
+        "L1": 0.23901162080466748,
+        "PSNR": 11.702759326024614
+      }
+    },
+    "speed_memory": {
+      "train_elapsed_seconds": 455.364,
+      "train_steps_per_second": 65.88136084538962,
+      "render_100_views_seconds": 9.309,
+      "vram_nvidia_smi_idle_mib": 13,
+      "vram_nvidia_smi_peak_mib": 2166,
+      "vram_samples": 434
+    },
+    "point_counts": {
+      "official_final_gaussians": 304358
+    }
+  }
+}
